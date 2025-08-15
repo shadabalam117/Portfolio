@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Kirito</title>
+  <meta name="description" content="About Kirito — skills, timeline, goals." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- Navbar (same as index for consistency) -->
+  <header class="bg-white border-b sticky top-0 z-40">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="https://i.pravatar.cc/80?img=3" alt="avatar" class="w-10 h-10 rounded-full">
+          <span class="font-semibold">Kirito</span>
+        </a>
+        <nav class="hidden md:flex space-x-4" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="underline">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" class="p-2 rounded-md focus:ring-2 focus:ring-blue-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="nav-menu" class="md:hidden hidden border-t">
+      <div class="px-4 pt-2 pb-4 space-y-1">
+        <a href="index.html" class="block">Home</a>
+        <a href="about.html" class="block">About</a>
+        <a href="projects.html" class="block">Projects</a>
+        <a href="contact.html" class="block">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+    <section class="bg-white p-6 rounded shadow card-shadow">
+      <h1 class="text-2xl font-bold">About Me</h1>
+      <p class="mt-3 text-slate-600">I am a Computer Science student committed to learning practical software development. I love building small product-focused projects that solve real problems. I focus on writing clean code, learning by doing, and sharing my work publicly on GitHub.</p>
+
+      <div class="mt-6 grid gap-6 sm:grid-cols-2">
+        <div>
+          <h2 class="font-semibold">Education</h2>
+          <p class="mt-2 text-sm text-slate-600">B.Tech (CSE) — Chandigarh University (admitted). Year of admission: 2025 (example)</p>
+        </div>
+        <div>
+          <h2 class="font-semibold">Goals</h2>
+          <ul class="mt-2 text-sm text-slate-600 list-disc pl-5">
+            <li>Get internships focusing on backend or full-stack engineering</li>
+            <li>Build projects that show end-to-end thinking</li>
+            <li>Get a job that provides international exposure (Japan interest)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <h2 class="font-semibold">Skills & Proficiency</h2>
+        <div class="mt-3 space-y-3">
+          <div>
+            <div class="flex justify-between text-sm">
+              <span>Python</span><span>80%</span>
+            </div>
+            <div class="w-full bg-slate-200 rounded-full mt-1" aria-hidden>
+              <div class="skill-bar" style="width:80%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-sm">
+              <span>JavaScript</span><span>70%</span>
+            </div>
+            <div class="w-full bg-slate-200 rounded-full mt-1" aria-hidden>
+              <div class="skill-bar" style="width:70%"></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-sm">
+              <span>HTML & CSS</span><span>85%</span>
+            </div>
+            <div class="w-full bg-slate-200 rounded-full mt-1" aria-hidden>
+              <div class="skill-bar" style="width:85%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-8 text-center text-sm text-slate-500">
+      <p>© <span id="year2"></span> Kirito</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year2').innerText = new Date().getFullYear();
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
