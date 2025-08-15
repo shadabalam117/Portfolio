@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kirito — Portfolio</title>
+  <meta name="description" content="Kirito — Aspiring CSE student. Projects: web apps, games, tools. Available for internships & freelance." />
+  <!-- Social preview -->
+  <meta property="og:title" content="Kirito — Portfolio" />
+  <meta property="og:description" content="Aspiring CSE student. Web dev, Python, projects with code." />
+  <meta property="og:image" content="https://i.pravatar.cc/600?img=3" />
+  <meta property="og:type" content="website" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>html{scroll-behavior:smooth}</style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-white border-b sticky top-0 z-40">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <img src="https://i.pravatar.cc/80?img=3" alt="Kirito avatar" class="w-10 h-10 rounded-full shadow-sm">
+          <span class="font-semibold text-lg">Kirito</span>
+        </a>
+
+        <nav class="hidden md:flex space-x-4 text-sm" aria-label="Primary">
+          <a href="index.html" class="hover:text-blue-600">Home</a>
+          <a href="about.html" class="hover:text-blue-600">About</a>
+          <a href="projects.html" class="hover:text-blue-600">Projects</a>
+          <a href="contact.html" class="hover:text-blue-600">Contact</a>
+        </nav>
+
+        <div class="md:hidden">
+          <button id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" class="p-2 rounded-md focus:ring-2 focus:ring-blue-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="nav-menu" class="md:hidden hidden border-t">
+      <div class="px-4 pt-2 pb-4 space-y-1">
+        <a href="index.html" class="block">Home</a>
+        <a href="about.html" class="block">About</a>
+        <a href="projects.html" class="block">Projects</a>
+        <a href="contact.html" class="block">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+    <section class="bg-white rounded-lg p-6 shadow card-shadow">
+      <div class="md:flex md:items-center md:gap-6">
+        <img class="w-28 h-28 rounded-full mx-auto md:mx-0" src="https://i.pravatar.cc/200?img=3" alt="Kirito avatar">
+        <div class="mt-4 md:mt-0 text-center md:text-left">
+          <h1 class="text-2xl sm:text-3xl font-bold">Hi — I'm Kirito</h1>
+          <p class="mt-2 text-slate-600 max-w-xl">Aspiring Computer Science student focusing on full-stack web development, efficient algorithms, and real-world projects. Seeking internships and freelance work. Skilled in Python, JavaScript, HTML/CSS, and Tailwind.</p>
+
+          <div class="mt-4 flex flex-wrap gap-3 justify-center md:justify-start">
+            <a href="projects.html" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">See Projects</a>
+            <a href="contact.html" class="inline-block border border-blue-600 text-blue-600 px-4 py-2 rounded hover:bg-blue-50">Contact Me</a>
+            <a href="https://github.com/username" target="_blank" class="inline-block text-sm text-slate-500 px-3 py-2">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK SKILLS -->
+    <section class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-3">
+      <span class="bg-white p-3 rounded text-center shadow">Python</span>
+      <span class="bg-white p-3 rounded text-center shadow">JavaScript</span>
+      <span class="bg-white p-3 rounded text-center shadow">HTML & CSS</span>
+      <span class="bg-white p-3 rounded text-center shadow">Tailwind</span>
+      <span class="bg-white p-3 rounded text-center shadow">React (Basics)</span>
+      <span class="bg-white p-3 rounded text-center shadow">Git & GitHub</span>
+    </section>
+
+    <!-- PROJECTS PREVIEW -->
+    <section class="mt-6">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-xl font-semibold">Featured Projects</h2>
+        <a href="projects.html" class="text-sm text-blue-600 hover:underline">View all</a>
+      </div>
+
+      <div class="grid gap-4 sm:grid-cols-2">
+        <!-- Card 1 -->
+        <article class="bg-white p-4 rounded card-shadow">
+          <img src="https://i.imgur.com/6vZfO7F.png" alt="Tic Tac Toe" class="rounded mb-3 w-full">
+          <h3 class="font-semibold">Tic-Tac-Toe Game</h3>
+          <p class="mt-1 text-sm text-slate-600">Interactive browser game using vanilla JS — AI & multiplayer.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <a href="projects/project1.html" class="text-blue-600 hover:underline text-sm">Details</a>
+            <a href="https://github.com/username/project1" target="_blank" class="text-sm text-slate-500">Code</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="bg-white p-4 rounded card-shadow">
+          <img src="https://i.imgur.com/O5c4JzM.png" alt="Portfolio template" class="rounded mb-3 w-full">
+          <h3 class="font-semibold">Portfolio Template</h3>
+          <p class="mt-1 text-sm text-slate-600">Mobile-first portfolio using Tailwind — fast and accessible.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <a href="projects/project2.html" class="text-blue-600 hover:underline text-sm">Details</a>
+            <a href="https://github.com/username/project2" target="_blank" class="text-sm text-slate-500">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-8 text-center text-sm text-slate-500">
+      <p>Made with ❤️ • <a class="text-blue-600" href="about.html">About</a> • <a class="text-blue-600" href="contact.html">Contact</a></p>
+      <p class="mt-3">© <span id="year"></span> Kirito. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <noscript class="fixed bottom-4 right-4 bg-yellow-100 border border-yellow-300 p-2 text-sm rounded">Enable JS for best experience.</noscript>
+
+  <script>
+    // small inline script: set year and load external js
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
