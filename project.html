@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects — Kirito</title>
+  <meta name="description" content="Projects by Kirito — Tic-Tac-Toe, Portfolio Template, Calculator App" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- Navbar -->
+  <header class="bg-white border-b sticky top-0 z-40">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="../index.html" class="flex items-center gap-3">
+          <img src="https://i.pravatar.cc/80?img=3" alt="avatar" class="w-10 h-10 rounded-full">
+          <span class="font-semibold">Kirito</span>
+        </a>
+        <nav class="hidden md:flex space-x-4">
+          <a href="../index.html">Home</a>
+          <a href="../about.html">About</a>
+          <a href="../projects.html" class="underline">Projects</a>
+          <a href="../contact.html">Contact</a>
+        </nav>
+        <div class="md:hidden">
+          <button id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" class="p-2 rounded-md focus:ring-2 focus:ring-blue-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="nav-menu" class="md:hidden hidden border-t">
+      <div class="px-4 pt-2 pb-4 space-y-1">
+        <a href="../index.html" class="block">Home</a>
+        <a href="../about.html" class="block">About</a>
+        <a href="../projects.html" class="block">Projects</a>
+        <a href="../contact.html" class="block">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+    <h1 class="text-2xl font-bold mb-4">Projects</h1>
+    <p class="text-slate-600 mb-6">Below are a few selected projects. Click a project to see details, code, and a live demo (where available).</p>
+
+    <div class="grid gap-4 sm:grid-cols-2">
+      <!-- Project 1 -->
+      <article class="bg-white p-4 rounded card-shadow">
+        <img src="https://i.imgur.com/6vZfO7F.png" alt="Project 1" class="rounded mb-3 w-full">
+        <h3 class="font-semibold">Tic-Tac-Toe Game</h3>
+        <p class="mt-1 text-sm text-slate-600">Vanilla JS game with AI opponent and local multiplayer.</p>
+        <div class="mt-3 flex justify-between items-center">
+          <a href="project1.html" class="text-blue-600 hover:underline">Details</a>
+          <a href="https://github.com/username/project1" target="_blank" class="text-sm text-slate-500">Code</a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="bg-white p-4 rounded card-shadow">
+        <img src="https://i.imgur.com/O5c4JzM.png" alt="Project 2" class="rounded mb-3 w-full">
+        <h3 class="font-semibold">Portfolio Template</h3>
+        <p class="mt-1 text-sm text-slate-600">This portfolio UI (mobile-first) built with Tailwind CSS.</p>
+        <div class="mt-3 flex justify-between items-center">
+          <a href="project2.html" class="text-blue-600 hover:underline">Details</a>
+          <a href="https://github.com/username/project2" target="_blank" class="text-sm text-slate-500">Code</a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="bg-white p-4 rounded card-shadow">
+        <img src="https://i.imgur.com/7cSx5Aq.png" alt="Project 3" class="rounded mb-3 w-full">
+        <h3 class="font-semibold">Calculator App</h3>
+        <p class="mt-1 text-sm text-slate-600">Lightweight JS calculator with keyboard support and responsive layout.</p>
+        <div class="mt-3 flex justify-between items-center">
+          <a href="project3.html" class="text-blue-600 hover:underline">Details</a>
+          <a href="https://github.com/username/project3" target="_blank" class="text-sm text-slate-500">Code</a>
+        </div>
+      </article>
+    </div>
+
+    <footer class="mt-8 text-center text-sm text-slate-500">
+      <p>© <span id="year3"></span> Kirito</p>
+    </footer>
+  </main>
+
+  <script>document.getElementById('year3').innerText = new Date().getFullYear();</script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
