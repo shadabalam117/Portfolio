@@ -1,0 +1,38 @@
+/* css/style.css - small custom styles (used with Tailwind CDN) */
+
+/* Use system fonts for speed */
+:root {
+  --accent: #2563eb; /* blue-600 fallback */
+  --muted: #6b7280;
+}
+
+/* Improve image behavior */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header link focus style for accessibility */
+a:focus {
+  outline: 3px solid rgba(37,99,235,0.2);
+  outline-offset: 2px;
+}
+
+/* Simple card shadow */
+.card-shadow {
+  box-shadow: 0 6px 18px rgba(15,23,42,0.08);
+}
+
+/* Small progress bar for skills */
+.skill-bar {
+  height: 10px;
+  background: linear-gradient(90deg, var(--accent), rgba(37,99,235,0.6));
+  border-radius: 999px;
+}
+
+/* Footer link hover */
+.footer-link:hover {
+  color: #e6f0ff;
+  text-decoration: underline;
+}
